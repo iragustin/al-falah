@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; 
+    color: #333;
+    padding: 10px 40px 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.registration-button {
+    background-color: #E8C300;
+    border-radius: 10px;
+    padding: 8px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.registration-button:hover {
+    background-color: #D8B200;
+}
+
+.registration-button {
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+#home {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background_perusahaan.png');
+    background-position:top; /* Menempatkan gambar di tengah area */
+    background-repeat: no-repeat;
+}
+
+.model-photo {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px; /* Sesuaikan margin sesuai kebutuhan */
+    text-align: center; /* Membuat foto model berada di tengah */
+}
+
+.headline {
+    /* border: 1px solid red; */
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 0px; /* Sesuaikan margin sesuai kebutuhan */
+    margin-bottom: -50px;
+}
+
+.headline h2 {
+    font-size: 24px; /* Ukuran font untuk headline */
+    color: #ffffff; /* Warna font untuk headline */
+}
+
+.headline .highlight {
+    color: #E8C300; /* Warna font yang di-highlight */
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#about {
+    border: #333 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10% 3% 10%;
+    text-align: center; /* Mengatur teks berada di tengah horisontal */
+}
+
+.about-info::-webkit-scrollbar {
+    display: none;
+}
+
+.about-info {
+    width: 50%; /* Lebar untuk teks tentang perusahaan */
+    max-height: 400px; /* Tinggi maksimum untuk area scrollable */
+    overflow-y: auto; /* Membuat area teks bisa discroll ketika melebihi kontainer */
+    padding-right: 20px; /* Jarak antara teks dan gambar */
+    text-align: justify;
+}
+
+.scrollable-text {
+
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+}
+
+.founder-photo {
+    width: 50%; /* Lebar untuk foto pendiri perusahaan */
+}
+
+.founder-photo img {
+    max-width: 100%; /* Membuat foto tidak melebihi lebar parent */
+    height: auto; /* Menjaga aspek rasio gambar */
+}
+
+#management {
+    border: red 1px solid;
+    background-color: #156C32;
+    display: flex;
+    align-items: center;
+    padding:0px 5% 0px 5%;
+    height: 500px;
+}
+
+.management-content {
+    border: red 1px solid;
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Membuat konten dapat di-scroll secara horizontal */
+    height: 350px;
+    width: 65%; /* Bagian kiri akan mendapat 70% dari lebar section */
+}
+
+.management-content::-webkit-scrollbar {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card-box {
+    width: 270px;
+    height: 350px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    background-color: #87A922;
+    color: #fff;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Menambahkan sudut tumpul pada cardbox */
+    overflow: hidden; /* Mengatasi foto pengurus yang terlalu besar */
+    position: relative;
+}
+
+.card-box img {
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 20px; /* Menyesuaikan sudut tumpul foto sesuai dengan cardbox */
+}
+
+.card-box span {
+    margin: 10px 0px 0px 0px;
+}
+
+.scroll-left,
+.scroll-right {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-left {
+    margin-right: 10px;
+}
+.scroll-right {
+    margin-left: 10px;
+}
+
+.management-title {
+    margin-left: 20px;
+    text-align: justify;
+    border: red 1px solid;
+    color: #fff;
+    flex: 1; /* Bagian kanan akan mengisi sisa lebar */
+}
+
+.management-title h2 {
+    text-align: left;
+}
+
+#affiliates {
+    border: #007bff solid 1px;
+    text-align: center; /* Memastikan konten berada di tengah */
+    padding: 50px 20px;
+}
+
+.affiliates-header h2 {
+    font-weight: bold; /* Membuat headline menjadi tebal */
+}
+
+.affiliates-logos {
+    margin: 20px 10% 0px 10%;
+    padding : 20px 20px 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Memastikan logo berada di tengah */
+    margin-bottom: 20px; /* Jarak antar baris logo */
+}
+
+.row img {
+    width: auto; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: 150px;
+    margin: 0 10px; /* Jarak antar logo */
+    filter: grayscale(100%); /* Mengubah logo menjadi hitam putih */
+    transition: filter 0.3s ease; /* Efek transisi ketika ada perubahan */
+}
+
+.row img:hover {
+    filter: grayscale(0%); /* Mengembalikan warna asli saat hover */
+}
+
+
+#registration {
+    text-align: center;
+    padding:5% 5% 5% 5%;
+    background-image: url('../images/background_pendaftaran.png'); /* Ganti 'background.jpg' dengan lokasi dan nama file background Anda */
+    background-size: cover; /* Memastikan background mencakup seluruh area */
+    background-position: center; /* Memastikan background berada di tengah */
+}
+
+.registration-header h2 {
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 0px 5% 0px 5%;
+}
+
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.card-box-pendaftaran {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-box h3 {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #87A922;;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#news{
+    background-color: #156C32;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    padding: 30px 5% 30px 5%;
+}
+
+.news-header h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.news-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.news-content {
+    border: red 1px solid;
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Membuat konten dapat di-scroll secara horizontal */
+    height: 380px;
+    width: 90%; /* Bagian kiri akan mendapat 70% dari lebar section */
+}
+
+.news-content::-webkit-scrollbar {
+    display: none;
+}
+
+.card-container-news {
+    display: flex;
+}
+
+.card-box-news {
+    width: 300px;
+    height: 350px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    background-color: #ffffff;
+    color: #000000;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Menambahkan sudut tumpul pada cardbox */
+    overflow: hidden; /* Mengatasi foto pengurus yang terlalu besar */
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.card-box-news h4{
+    border: yellowgreen 1px solid;
+}
+
+.author{
+    font-size: 12px;
+}
+
+.card-box-news-date{
+    display: flex;
+}
+
+.card-box-news-date p{
+    font-weight:bold ;
+}
+.card-box-news-date button{
+    background-color: #E8C300;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 8px 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-box-news img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px; /* Menyesuaikan sudut tumpul foto sesuai dengan cardbox */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==================================== */
+
+.pengasuh-content {
+    display: flex;
+    justify-content: center;
+    padding: 0px 15% 0px 15%;
+
+}
+
+.pengasuh-content-kiri{
+    max-width: 30%;
+    align-items: center;
+    text-align: center;
+}
+
+.card-box-pengasuh{
+    width: 350px;
+    height: 400px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    background-color: #87A922;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Menambahkan sudut tumpul pada cardbox */
+    overflow: hidden; /* Mengatasi foto pengurus yang terlalu besar */
+    position: relative;
+    margin-top: 20px;
+}
+
+.card-box-pengasuh img{
+    max-width: 90%;
+    max-height: 85%;
+    border-radius: 20px; /* Menyesuaikan sudut tumpul foto sesuai dengan cardbox */
+}
+
+.biography {
+    margin-left: 10%;
+}
+
+.biography h1 {
+    color: #000000;
+    font-size: 50px;;
+}
+
+.biography p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ============================================================ */
+
+#news-page{
+    padding: 20px 10% 20px 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.foto-berita{
+    /* display: flex;
+    max-width: 70%;
+    height: auto;
+    border: #007bff 1px solid; */
+}
+.foto-berita img{
+    max-height: 600px;
+    border-radius: 20px;
+}
+
+.berita {
+    text-align: center;
+}
+
+.berita h1 {
+    color: #000000;
+    font-size: 50px;;
+}
+
+.berita-isi {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.author-berita{
+    text-align: center;
+}
+
+/* =========================================================================== */
+
+/* Style untuk section form pendaftaran */
+#registration-form {
+    max-width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registration-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #156C32;
+}
+
+/* Style untuk group form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group small {
+    color: #999;
+}
+
+/* Style untuk tombol kirim */
+button[type="submit"] {
+    background-color: #E8C300;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    color: #fff;
+    background-color: #87751b;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+    #registration-form {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+
+/* ========================admin========================== */
+
